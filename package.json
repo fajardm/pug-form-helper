@@ -1,0 +1,36 @@
+{
+  "name": "pug-form-helper",
+  "version": "1.0.0",
+  "description": "create form helper using pug",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fajardm/pug-form-helper.git"
+  },
+  "keywords": [
+    "pug",
+    "form",
+    "helper",
+    "nodejs"
+  ],
+  "author": "fajar.dwi.mawan@gmail.com",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fajardm/pug-form-helper/issues"
+  },
+  "homepage": "https://github.com/fajardm/pug-form-helper#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta.12"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}

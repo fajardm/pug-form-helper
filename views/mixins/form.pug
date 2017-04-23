@@ -1,0 +1,26 @@
+//
+  - Input field
+  - @params {object} params
+//
+mixin text_field (params)
+  - const name = params.name ? params.name : ''
+  - const label = params.label ? params.label : name
+  - const placeholder = params.placeholder ? params.placeholder : label
+  - const type = params.type ? params.type : 'text'
+  .form-group
+    label(for=name) #{label}
+    input.form-control(id=name, name=name, type=type, placeholder=placeholder)
+
+//
+  - Select tag
+  - @params {object} params
+//
+mixin select_tag (params)
+  - const name = params.name ? params.name : ''
+  - const label = params.label ? params.label : name
+  - const items = Array.isArray(params.items) ? params.items : [params.items]
+  .form-group
+    label(for=name) #{label}
+    select.form-control(id=name, name=name)
+      each item in items
+        option #{item}
